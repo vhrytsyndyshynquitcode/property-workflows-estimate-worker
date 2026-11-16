@@ -1,0 +1,7 @@
+Estimate 2026-0102
+Vendor: Bright Spark Electric (example)
+Case: Apartment 3, socket
+Call-out fee, 1 x 35.00
+Replace socket, 2 x 40.00
+Labour, 1 h x 60.00
+Total 175.00

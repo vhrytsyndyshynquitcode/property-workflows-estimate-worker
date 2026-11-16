@@ -1,0 +1,182 @@
+{
+  "duration_api_ms": 21318,
+  "stop_reason": "end_turn",
+  "session_id": "5014a5ca-8bd5-436e-ab4f-7165d49947e9",
+  "total_cost_usd": 0.4333182,
+  "usage": {
+    "input_tokens": 10,
+    "cache_creation_input_tokens": 43544,
+    "cache_read_input_tokens": 221631,
+    "output_tokens": 2030,
+    "output_tokens_details": {
+      "thinking_tokens": 223
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 43544,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 554,
+        "cache_read_input_tokens": 59485,
+        "cache_creation_input_tokens": 884,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 884
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 10,
+      "outputTokens": 2030,
+      "cacheReadInputTokens": 221631,
+      "cacheCreationInputTokens": 43544,
+      "webSearchRequests": 0,
+      "costUSD": 0.4333182,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 223,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 43544,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [
+    {
+      "tool_name": "PowerShell",
+      "tool_use_id": "toolu_013Wcr6rKgxXeELn6zVv2pvB",
+      "tool_input": {
+        "command": "node scripts/check-estimate.mjs data/2026-11-batch-b; \"EXIT=$LASTEXITCODE\"; ls out",
+        "description": "Run estimate checklist script on batch"
+      }
+    },
+    {
+      "tool_name": "Bash",
+      "tool_use_id": "toolu_01Eq6gZFDyLXUwa9gBy9TKgu",
+      "tool_input": {
+        "command": "node scripts/check-estimate.mjs data/2026-11-batch-b; echo \"EXIT=$?\"",
+        "description": "Run estimate checklist script on batch"
+      }
+    }
+  ],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 7,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "**Стан пакета `2026-11-batch-b`: НЕ ПЕРЕВІРЕНО.**\n\n- **Чому:** скрипт перевірки (`node scripts/check-estimate.mjs`) не запустився. Сесія працює в режимі «don't ask», і в ній заборонено запускати команди, ні через Bash, ні через PowerShell. За правилами суми, ціни й дублікати рахує лише скрипт, тож вручну я нічого не рахував.\n- **Кошториси:** у пакеті 3 кошториси (`est-0201`, `est-0202`, `est-0203`). OK: 0, з проблемами: 0, не перевірено: 3. Жоден не можна передавати на погодження, доки його не перевірить скрипт.\n- **Перевіряльник `estimate-verifier`:** я його не запускав. Без виводу скрипта нема з чим звірити його вердикт, і стан однаково лишився б НЕ ПЕРЕВІРЕНО.\n- **Звіт:** `out/2026-11-17 Кошториси 2026-11-batch-b.md`\n\n**Що потрібно від вас:** дозвольте запуск `node scripts/check-estimate.mjs`. Це можна зробити правилом у `.claude/settings.json` (я можу його додати, якщо скажете) або запустити перевірку в інтерактивній сесії. Потім повторіть `/estimate-checker data/2026-11-batch-b`. Сьогоднішній звіт уже існує, тому повторний запуск сьогодні має записати звіт у файл з іншою назвою, а не переписувати цей.",
+  "ttft_ms": 1827,
+  "type": "result",
+  "duration_ms": 22628,
+  "uuid": "c4a252e7-56df-4306-a766-418e02878779",
+  "ttft_stream_ms": 1361,
+  "time_to_request_ms": 542,
+  "time_to_request_phases_ms": {
+    "other": 7,
+    "system_prompt": 24,
+    "resume_other": 1,
+    "process_user_input": 3,
+    "input_command": 67,
+    "input_hooks": 0,
+    "conversation_append": 1,
+    "transcript_persist": 26,
+    "tool_pool_refresh": 3,
+    "init_message": 19,
+    "init_frame_send": 5,
+    "engine_pickup": 1,
+    "loop_entry": 5,
+    "message_prep": 1,
+    "model_config_wait": 328,
+    "autocompact": 2,
+    "request_announcements": 11,
+    "query_setup": 1,
+    "model_gates": 1,
+    "tool_schema_build": 12,
+    "message_normalization": 7,
+    "client_creation": 4,
+    "request_build": 13
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 79,
+  "time_to_request_cpu_ms": 782,
+  "time_to_request_major_faults": 11557,
+  "tool_schema_build_detail": {
+    "betas_ms": 1,
+    "waits_ms": 1,
+    "placement_ms": 1,
+    "render_ms": 9,
+    "after_ms": 0,
+    "other_ms": 0,
+    "tools": 14,
+    "new_schemas": 14
+  },
+  "message_normalization_detail": {
+    "before_ms": 0,
+    "normalize_ms": 5,
+    "images_ms": 0,
+    "post_process_ms": 2,
+    "after_ms": 0,
+    "other_ms": 0,
+    "messages": 14,
+    "wire_messages": 2
+  },
+  "request_build_detail": {
+    "records_ms": 0,
+    "system_ms": 2,
+    "headers_ms": 1,
+    "cache_break_record_ms": 1,
+    "plans_ms": 2,
+    "retry_setup_ms": 0,
+    "sent_build_ms": 2,
+    "record_attempt_ms": 5,
+    "other_ms": 0,
+    "sent_build_safety_context_ms": 0,
+    "sent_build_cache_breakpoints_ms": 0,
+    "sent_build_surrogate_scan_ms": 1
+  },
+  "first_content_frame_ms": 1361,
+  "queued_turn_count": 0,
+  "result_index": 0
+}

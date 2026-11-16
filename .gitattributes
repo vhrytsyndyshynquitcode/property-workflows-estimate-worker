@@ -1,0 +1,2 @@
+# run.sh має лишатися з LF навіть на Windows
+*.sh text eol=lf

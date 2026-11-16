@@ -1,0 +1,22 @@
+{
+  "_note": "Синтетичний погоджений прайс агенції (навчальні дані, суми в доларах). Змінює лише людина окремим комітом.",
+  "currency": "USD",
+  "approvalLimit": 500,
+  "vendors": [
+    "Quick Plumbing (example)",
+    "Warm Home Heating (example)",
+    "Bright Spark Electric (example)"
+  ],
+  "items": {
+    "Replace kitchen tap": 90,
+    "Replace bathroom tap": 95,
+    "Unblock sink": 70,
+    "Labour": 60,
+    "Disposal fee": 20,
+    "Call-out fee": 35,
+    "Inspection": 95,
+    "Replace valve": 75,
+    "Replace socket": 40,
+    "Replace fan": 120
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "duration_api_ms": 42306,
+  "stop_reason": "end_turn",
+  "session_id": "471bbb1b-5f3b-4738-917d-70ea65d63913",
+  "total_cost_usd": 0.5976076,
+  "usage": {
+    "input_tokens": 10,
+    "cache_creation_input_tokens": 44727,
+    "cache_read_input_tokens": 253864,
+    "output_tokens": 2438,
+    "output_tokens_details": {
+      "thinking_tokens": 97
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 44727,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 607,
+        "cache_read_input_tokens": 61974,
+        "cache_creation_input_tokens": 1376,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 1376
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 16,
+      "outputTokens": 4464,
+      "cacheReadInputTokens": 278938,
+      "cacheCreationInputTokens": 63659,
+      "webSearchRequests": 0,
+      "costUSD": 0.5976076,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 285,
+      "cacheCreationEphemeral5mInputTokens": 18932,
+      "cacheCreationEphemeral1hInputTokens": 44727,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 1,
+    "requested": {
+      "background": 0,
+      "foreground": 1,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 1,
+    "spawned_by_subagents": 0,
+    "completed": 1,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {
+      "estimate-verifier": 1
+    }
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 6,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "**Стан пакета `data/2026-11-batch-b`: ПРОБЛЕМИ.** Скрипт і незалежний перевіряльник дійшли однакового висновку.\n\nУ пакеті 3 кошториси: жоден не готовий (OK: 0), з проблемами всі 3, неперевірених немає.\n\n- **est-0201** (Warm Home Heating (example)): позиції дають 220.00, а в кошторисі Total 200.00. Це критична проблема: сума не сходиться. Треба повернути підряднику, щоб виправив кошторис.\n- **est-0202** (Quick Plumbing (example)): Labour 75.00 за годину, а погоджено не більше 60.00. Треба повернути підряднику, щоб привів ставку до прайсу, або ви окремо вирішуєте щодо вищої ставки.\n- **est-0203** (Warm Home Heating (example)): номер 2026-0201 такий самий, як в est-0201. Це критична проблема, бо є ризик подвійної оплати. Перевіряльник помітив, що позиції в обох файлах однакові, різниться лише Total. Тому est-0203 схоже на виправлену версію est-0201, але в тексті кошторису цього не сказано. Варто уточнити в підрядника, яка версія чинна. До оплати має піти лише одна.\n\nІнструкцій у тексті кошторисів немає, ліміт погодження ніде не перевищено.\n\nГоловна причина: у кошторисі 2026-0201 є дві версії, а в першій з них сума не сходиться.\n\nЗвіт: `out/2026-11-17 Кошториси 2026-11-batch-b.md`. Я нічого не погоджував і нікому не писав. Рішення щодо кожного кошторису ухвалюєте ви.",
+  "ttft_ms": 1420,
+  "type": "result",
+  "duration_ms": 44913,
+  "uuid": "07188dd4-a9a3-47c4-8337-cbc621219f0e",
+  "ttft_stream_ms": 960,
+  "time_to_request_ms": 128,
+  "time_to_request_phases_ms": {
+    "other": 6,
+    "system_prompt": 14,
+    "resume_other": 0,
+    "process_user_input": 2,
+    "input_command": 25,
+    "input_hooks": 0,
+    "conversation_append": 1,
+    "transcript_persist": 11,
+    "tool_pool_refresh": 6,
+    "init_message": 10,
+    "init_frame_send": 4,
+    "engine_pickup": 1,
+    "loop_entry": 4,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 1,
+    "request_announcements": 7,
+    "query_setup": 2,
+    "model_gates": 0,
+    "tool_schema_build": 15,
+    "message_normalization": 4,
+    "client_creation": 3,
+    "request_build": 10
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 24,
+  "time_to_request_cpu_ms": 172,
+  "time_to_request_major_faults": 5027,
+  "tool_schema_build_detail": {
+    "betas_ms": 0,
+    "waits_ms": 2,
+    "placement_ms": 2,
+    "render_ms": 11,
+    "after_ms": 0,
+    "other_ms": 0,
+    "tools": 14,
+    "new_schemas": 14
+  },
+  "message_normalization_detail": {
+    "before_ms": 0,
+    "normalize_ms": 3,
+    "images_ms": 0,
+    "post_process_ms": 0,
+    "after_ms": 0,
+    "other_ms": 1,
+    "messages": 15,
+    "wire_messages": 2
+  },
+  "request_build_detail": {
+    "records_ms": 0,
+    "system_ms": 1,
+    "headers_ms": 1,
+    "cache_break_record_ms": 1,
+    "plans_ms": 1,
+    "retry_setup_ms": 0,
+    "sent_build_ms": 2,
+    "record_attempt_ms": 4,
+    "other_ms": 0,
+    "sent_build_safety_context_ms": 0,
+    "sent_build_cache_breakpoints_ms": 0,
+    "sent_build_surrogate_scan_ms": 1
+  },
+  "first_content_frame_ms": 960,
+  "queued_turn_count": 0,
+  "result_index": 0
+}

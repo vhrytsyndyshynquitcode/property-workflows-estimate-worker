@@ -1,0 +1,7 @@
+Estimate 2026-0101
+Vendor: Quick Plumbing (example)
+Case: Apartment 12, leak
+Replace kitchen tap, 1 x 85.00
+Labour, 2 h x 60.00
+Disposal fee, 1 x 15.00
+Total 220.00
